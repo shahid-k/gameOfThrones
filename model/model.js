@@ -16,7 +16,6 @@ modelObj.countOfBattles = () => {
       .find(
         {
           battle_number: { $ne: null },
-          $where: "this.battle_number.length >0",
         },
         { _id: 0, battle_number: 1 }
       )

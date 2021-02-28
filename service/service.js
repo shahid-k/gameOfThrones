@@ -2,7 +2,6 @@ const modelObj = require("../model/model");
 
 const ServiceObj = {};
 
-//update the products to cart
 ServiceObj.list = () => {
   return modelObj
     .getList()
@@ -18,7 +17,6 @@ ServiceObj.list = () => {
     });
 };
 
-// fetches cart object
 ServiceObj.battles = () => {
   return modelObj.countOfBattles().then((item) => {
     if (item) {
