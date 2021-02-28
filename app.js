@@ -5,7 +5,7 @@ const errorLogger = require("./utilities/errorLogger");
 const RouterObj = require("./routes/Routing");
 const bodyParser = require("body-parser");
 const cors = require("cors");
-
+var PORT = process.env.PORT || 3000;
 app.use(cors());
 app.use(bodyParser.json());
 
@@ -25,5 +25,5 @@ app.use(errorLogger);
 //     });
 // });
 
-app.listen(3000);
+app.listen(PORT);
 console.log("Hoopla Server Started!!");
