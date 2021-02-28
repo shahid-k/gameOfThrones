@@ -14,16 +14,5 @@ app.use("/", RouterObj);
 
 app.use(errorLogger);
 
-// app.get("/setupDb", (req, res, next) => {
-//   createDb
-//     .setupDb()
-//     .then((data) => {
-//       res.send(data);
-//     })
-//     .catch((err) => {
-//       next(err);
-//     });
-// });
-
 app.listen(PORT);
 console.log("Hoopla Server Started!!");
