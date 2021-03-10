@@ -1,4 +1,4 @@
-# gameOfThrones
+# Game of Thrones Data Analysis
 
 Assignment of data analysis on Game Of Thrones battles dataset, hosted in Heroku and MongoDb Atlas.
 
